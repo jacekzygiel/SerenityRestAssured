@@ -1,25 +1,13 @@
-package postcodes.stepdefs;
+package com.zygiel.stepdefs;
 
-import cucumber.api.java.Before;
-
-import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class BaseTest {
 
     public static String BASE_URI = "http://api.postcodes.io/";
-
-    @Before
-    private static void setPropertiesFromFile() {
-        Properties prop = new Properties();
-        try {
-            prop.load(BaseTest.class.getClassLoader().getResourceAsStream("config.properties"));
-            BASE_URI = prop.getProperty("host.url");
-        }
-        catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
 
     public static final List<String> INVALID_POST_CODES_LIST =
             new ArrayList<>(Arrays.asList("123 ABC", "O2L5 51A", "XXX 222"));

@@ -1,4 +1,4 @@
-package postcodes;
+package com.zygiel;
 
 public enum PostcodesEndpoints {
     LOOKUP("postcodes/{postcode}"),

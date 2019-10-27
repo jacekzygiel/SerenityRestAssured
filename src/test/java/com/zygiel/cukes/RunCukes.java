@@ -1,4 +1,4 @@
-package postcodes.cukes;
+package com.zygiel.cukes;
 
 import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         features = "classpath:features",
-        glue = {"postcodes.stepdefs"}
+        glue = {"com.zygiel.stepdefs"}
 )
 public class RunCukes {
 }

@@ -1,11 +1,11 @@
-package postcodes.stepdefs;
+package com.zygiel.stepdefs;
 
+import com.zygiel.PostcodesEndpoints;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import org.apache.http.HttpStatus;
-import postcodes.PostcodesEndpoints;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
